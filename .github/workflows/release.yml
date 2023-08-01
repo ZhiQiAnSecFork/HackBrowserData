@@ -33,6 +33,9 @@ jobs:
           race: false
           ldflags: -s -w
           buildmode: default 
+          args: |
+            -trimpath
+            -ldflags="-w -s"
 
       - name: Set Variable
         run: |
